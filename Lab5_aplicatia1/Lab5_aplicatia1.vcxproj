@@ -30,7 +30,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -139,7 +139,7 @@
     <ClInclude Include="glut.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="robot.cpp" />
+    <ClCompile Include="tanc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="dlls\glu32.dll">

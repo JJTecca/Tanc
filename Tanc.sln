@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tanc_sln", "Lab5_aplicatia1\Lab5_aplicatia1.vcxproj", "{21EC0573-EF41-46CA-8AAF-08511BED7C61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21EC0573-EF41-46CA-8AAF-08511BED7C61}.Debug|x86.ActiveCfg = Debug|Win32
+		{21EC0573-EF41-46CA-8AAF-08511BED7C61}.Debug|x86.Build.0 = Debug|Win32
+		{21EC0573-EF41-46CA-8AAF-08511BED7C61}.Release|x86.ActiveCfg = Release|Win32
+		{21EC0573-EF41-46CA-8AAF-08511BED7C61}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DA1D91E-8405-4161-9363-E795058B0974}
+	EndGlobalSection
+EndGlobal

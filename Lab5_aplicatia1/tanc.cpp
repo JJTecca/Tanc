@@ -9,7 +9,7 @@
 static GLfloat x = 0;
 static GLfloat y = 0;
 static GLfloat alpha = 0;
-static GLfloat sizeX = 1.55;
+static GLfloat sizeX = 1.55;  
 static GLfloat sizeY = 1.5;
 static GLfloat sizeZ = 4.25;
 static int rotate = 0;
@@ -40,7 +40,7 @@ GLfloat ctrlpoints2[4][4][3] = {
     {{-2.0, 4.0, 0.5}, {-0.7, 3.0, 0.0}, {0.7, 4.0, 0.5}, {2.0, 4.0, 0.5}},
     {{-2.0, 1.5, 0.0}, {-0.7, 0.5, -1.0}, {0.7, 3.5, -0.0}, {2.0, 3.5, 0.0}},
     {{-2.0, -1.5, 0.0}, {-0.7, -1.5, -1.0}, {0.7, -1.5, -1.0}, {2.0, -1.5, 0.0}},
-    {{-2.0, -2.0, 0.0}, {-0.7, -3.0, 0.0}, {0.7, -3.0, 0.7}, {2.0, -4.5, 0.3}}
+    {{-2.0, -2.0, 0.0}, {-0.7, -3.0, 0.0}, {0.7, -3.0, 0.7}, {2.0, -4.5, 0.3}} 
 };
 
 typedef struct {
@@ -171,19 +171,19 @@ void Body() {
     glTexCoord2f(0.0f, 0.0f); glVertex3f(-sizeX, -sizeY, -sizeZ);
     glTexCoord2f(1.0f, 0.0f); glVertex3f(sizeX, -sizeY, -sizeZ);
     glTexCoord2f(1.0f, 1.0f); glVertex3f(sizeX, sizeY, -sizeZ);
-    glTexCoord2f(0.0f, 1.0f); glVertex3f(-sizeX, sizeY, -sizeZ);
+    glTexCoord2f(0.0f, 1.0f); glVertex3f(-sizeX, sizeY, -sizeZ); 
 
     glNormal3f(-1.0f, 0.0f, 0.0f);
     glTexCoord2f(0.0f, 0.0f); glVertex3f(-sizeX, -sizeY, -sizeZ);
     glTexCoord2f(1.0f, 0.0f); glVertex3f(-sizeX, -sizeY, sizeZ);
     glTexCoord2f(1.0f, 1.0f); glVertex3f(-sizeX, sizeY, sizeZ);
-    glTexCoord2f(0.0f, 1.0f); glVertex3f(-sizeX, sizeY, -sizeZ);
+    glTexCoord2f(0.0f, 1.0f); glVertex3f(-sizeX, sizeY, -sizeZ); 
 
     glNormal3f(1.0f, 0.0f, 0.0f);
     glTexCoord2f(0.0f, 0.0f); glVertex3f(sizeX, -sizeY, -sizeZ);
     glTexCoord2f(1.0f, 0.0f); glVertex3f(sizeX, -sizeY, sizeZ);
     glTexCoord2f(1.0f, 1.0f); glVertex3f(sizeX, sizeY, sizeZ);
-    glTexCoord2f(0.0f, 1.0f); glVertex3f(sizeX, sizeY, -sizeZ);
+    glTexCoord2f(0.0f, 1.0f); glVertex3f(sizeX, sizeY, -sizeZ); 
 
     glNormal3f(0.0f, 1.0f, 0.0f);
     glTexCoord2f(0.0f, 0.0f); glVertex3f(-sizeX, sizeY, -sizeZ);
@@ -195,7 +195,7 @@ void Body() {
     glTexCoord2f(0.0f, 0.0f); glVertex3f(-sizeX, -sizeY, -sizeZ);
     glTexCoord2f(1.0f, 0.0f); glVertex3f(sizeX, -sizeY, -sizeZ);
     glTexCoord2f(1.0f, 1.0f); glVertex3f(sizeX, -sizeY, sizeZ);
-    glTexCoord2f(0.0f, 1.0f); glVertex3f(-sizeX, -sizeY, sizeZ);
+    glTexCoord2f(0.0f, 1.0f); glVertex3f(-sizeX, -sizeY, sizeZ); 
 
     glEnd();
 }
@@ -222,7 +222,7 @@ void BodyFront(int sign) {
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(D);
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(C);
     glTexCoord2f(1.0f, 1.0f); glVertex3fv(F);
-    glTexCoord2f(0.0f, 1.0f); glVertex3fv(E);
+    glTexCoord2f(0.0f, 1.0f); glVertex3fv(E); 
 
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(A);
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(D);
@@ -232,12 +232,12 @@ void BodyFront(int sign) {
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(C);
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(B);
     glTexCoord2f(1.0f, 1.0f); glVertex3fv(G);
-    glTexCoord2f(0.0f, 1.0f); glVertex3fv(F);
+    glTexCoord2f(0.0f, 1.0f); glVertex3fv(F); 
 
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(E);
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(F);
     glTexCoord2f(1.0f, 1.0f); glVertex3fv(G);
-    glTexCoord2f(0.0f, 1.0f); glVertex3fv(H);
+    glTexCoord2f(0.0f, 1.0f); glVertex3fv(H); 
 
     glEnd();
 }
@@ -263,7 +263,7 @@ void myinit(void) {
 
     glClearColor(0.5, 0.5, 0.5, 1.0);
     glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-
+   
     textureId1 = incarcaTextura("tracks.bmp");
     textureId2 = incarcaTextura("parchet.bmp");
     textureId3 = incarcaTextura("camo.bmp");
@@ -279,7 +279,7 @@ void myinit(void) {
 
 void CALLBACK display(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glLoadIdentity();
+    glLoadIdentity(); 
     glTranslatef(-70 + x, -30 + y, -200);
     glRotatef(145 + alpha, 1, 1, 1);
     gluLookAt(0.0, 0.0, 3.0,
@@ -452,24 +452,24 @@ void CALLBACK display(void) {
     }
 
     glBitmap(0, 0, 0.0, 0.0, 20.0, 0.0, nullptr);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[5].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[4].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[2].letter);
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[5].letter); 
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[4].letter);  
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[2].letter); 
     glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[6].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[7].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[2].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[1].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[8].letter);
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[7].letter); 
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[2].letter); 
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[1].letter); 
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[8].letter);  
 
     glBitmap(0, 0, 0.0, 0.0, 20.0, 0.0, nullptr);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[1].letter);
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[1].letter); 
     glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[9].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[10].letter);
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[10].letter); 
     glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[11].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[1].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[8].letter);
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[1].letter); 
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[8].letter); 
     glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[12].letter);
-    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[4].letter);
+    glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[4].letter); 
     glBitmap(10, 12, 0.0, 0.0, 20.0, 0.0, Letters[13].letter);
 
     glMatrixMode(GL_PROJECTION);
@@ -498,7 +498,7 @@ int main(int argc, char** argv) {
     auxInitWindow("Proiect tank");
     myinit();
     auxKeyFunc(AUX_LEFT, RotireTunStanga);
-    auxKeyFunc(AUX_RIGHT, RotireTunDreapta);
+    auxKeyFunc(AUX_RIGHT, RotireTunDreapta);    
     //auxKeyFunc(AUX_UP, MutaSus);
     //auxKeyFunc(AUX_DOWN, MutaJos);
     auxKeyFunc(AUX_w, rotateLeft);
